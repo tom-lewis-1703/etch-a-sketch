@@ -4,10 +4,10 @@
 
 #container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(16, 1fr);
     padding-left: 32%;
     padding-right: 40%;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #container div {
@@ -16,13 +16,22 @@
     border: 1px solid black;
 }
 
-#container div:hover {
-    background-color: black;
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
 }
 
 h1 {
     text-align: center;
     font-size: 48px;
+}
+
+#clear-btn {
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
 }
 
 #num1 {
