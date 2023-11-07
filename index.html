@@ -11,8 +11,16 @@
     </head>
     <body>
         <div id="header">
-            <h1>Etch-A-Sketch</h1>
-            <button id="clear-btn">Clear</button>    
+            <h1>Etch-A-Sketch</h1>  
+        </div>
+        <div id="options">
+            <input id="slider" name="slider" type="range" value="16" min="1" max="64" step="1">
+            <label for="slider" id="slidervalue">16x16</label>
+        </div>
+        <div id="buttons">
+            <button id="new-grid-btn">Create New Grid</button>
+            <button id="clear-btn">Clear</button>
+            <button id="lines-btn">Toggle Lines</button>
         </div>
         <div id="container"></div>
         <script src="etch.js" async defer></script>

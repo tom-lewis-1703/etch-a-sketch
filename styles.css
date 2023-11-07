@@ -2,17 +2,18 @@
     font-family: 'Playpen Sans';
 }
 
-#container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    padding-left: 32%;
-    padding-right: 40%;
-    padding-top: 20px;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#container div {
-    width: 40px;
-    height: 40px;
+#container {
+    display: grid;
+    margin-top: 20px;
+    width: 650px;
+    height: 650px;
     border: 1px solid black;
 }
 
@@ -29,11 +30,65 @@ h1 {
 }
 
 #clear-btn {
-    height: 50px;
-    width: 80px;
-    font-size: 24px;
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: .2s;
 }
 
-#num1 {
-    border: 1px solid red;
+#clear-btn:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgb(207, 208, 209);
+}
+
+#lines-btn {
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#lines-btn:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgb(207, 208, 209);
+}
+
+#new-grid-btn {
+    height: 30px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#new-grid-btn:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgb(207, 208, 209);
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#slider {
+    cursor: pointer;
+}
+
+#slidervalue {
+    width: 50px;
 }
